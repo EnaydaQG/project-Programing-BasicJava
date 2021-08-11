@@ -4,13 +4,17 @@ public class Person {
     Integer idPerson;
     String name;
     String lastName;
-    String age;
-public Person(Integer idPerson, String name, String lastName){
+    int age;
+public Person(Integer idPerson, String name, String lastName, int age){
     this.idPerson = idPerson;
     this.lastName = lastName;
     this.name = name;
+    this.age=age;
 }
+
+
     public String getName() {
+
         return name;
     }
 
@@ -22,7 +26,7 @@ public Person(Integer idPerson, String name, String lastName){
         return idPerson;
     }
 
-    public void setIdPerson(Integer idPerson) {
+   /* public void setIdPerson(Integer idPerson) {
         this.idPerson = idPerson;
     }
 
@@ -32,13 +36,13 @@ public Person(Integer idPerson, String name, String lastName){
 
     public void setName(String name) {
         this.name = name;
-    }
+    }*/
 
-    public String getAge() {
+    public int getAge() {
         return age;
     }
 
-    public void setAge(String age) {
+    /* public void setAge(int age) {
         this.age = age;
-    }
+    }*/
 }
